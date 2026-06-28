@@ -1,6 +1,7 @@
 "use client";
 
-import { Instagram, Facebook, Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { FacebookIcon, InstagramIcon } from "@/components/icons/social-icons";
 import { siteConfig } from "@/lib/data";
 import { useChat } from "@/components/chat-context";
 import { Button } from "@/components/ui/button";
@@ -90,7 +91,7 @@ export function Footer() {
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/70 hover:bg-white/10 hover:text-white transition-all"
                 aria-label="Instagram"
               >
-                <Instagram className="h-4 w-4" />
+                <InstagramIcon />
               </a>
               <a
                 href={siteConfig.facebook}
@@ -99,7 +100,7 @@ export function Footer() {
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/70 hover:bg-white/10 hover:text-white transition-all"
                 aria-label="Facebook"
               >
-                <Facebook className="h-4 w-4" />
+                <FacebookIcon />
               </a>
             </div>
           </div>
